@@ -8,14 +8,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#22c55e'
+          DEFAULT: '#252525',
+        },
+        accent: {
+          DEFAULT: '#228B22',
         },
         background: {
-          DEFAULT: '#f5f5f5'
+          DEFAULT: '#ffffff',
         },
       },
     },
   },
   plugins: [],
 };
-
