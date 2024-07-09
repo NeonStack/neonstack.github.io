@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="flex justify-between bg-background shadow-md p-5 px-10 fixed w-full z-50">
       {/* desktop */}
-      <h1 className="text-text-dark text-xl font-bold">JL-PH <span className='text-accent'>|</span> PORTFOLIO</h1>
+      <h1 className="text-text-dark text-xl font-bold">NeonStack <span className='text-accent'>|</span> PORTFOLIO</h1>
       <ul className="hidden gap-5 [&>*]:font-semibold md:flex">
         <li><a href="#" className="px-2 py-1 parent-triangle-container">Home</a></li>
         <li><a href="#" className="px-2 py-1 parent-triangle-container">About Me</a></li>
