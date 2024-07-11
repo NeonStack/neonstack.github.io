@@ -10,10 +10,10 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between bg-background shadow-md p-5 px-10 fixed w-full z-50">
+    <header className="flex justify-between bg-primary shadow-md p-5 px-10 fixed w-full z-50">
       {/* desktop */}
-      <h1 className="text-text-dark text-xl font-bold">NeonStack <span className='text-accent'>|</span> PORTFOLIO</h1>
-      <ul className="hidden gap-5 [&>*]:font-semibold md:flex">
+      <a href='https://neonstack.github.io'><h1 className="text-text text-xl font-bold"> <span className='text-accent'>Neon</span>Stack</h1></a>
+      <ul className="hidden gap-6 [&>*]:font-semibold md:flex">
         <li><a href="#" className="px-2 py-1 parent-triangle-container">Home</a></li>
         <li><a href="#" className="px-2 py-1 parent-triangle-container">About Me</a></li>
         <li><a href="#" className="px-2 py-1 parent-triangle-container">Projects</a></li>
@@ -22,12 +22,12 @@ export default function Header() {
       </ul>
 
       {/* mobile closed menu*/}
-      <FaBars size={24} color="#333" className='md:hidden' onClick={toggleMenu} />
+      <FaBars size={24} className='md:hidden text-text' onClick={toggleMenu} />
 
       {/* mobile opened menu*/}
-      <div className={`flex bg-background shadow-md absolute w-[100%] h-[100vh] justify-center items-center z-50 top-0 md:hidden ease-in-out duration-500 ${showMenu ? 'left-[0%]' : 'left-[-110%]'}`}>
-        <IoMdClose className="absolute right-10 top-10 text-4xl cursor-pointer" onClick={toggleMenu} /> {/* close btn */}
-        <ul className="text-2xl flex flex-col gap-5 text-center font-semibold [&>*]:rounded-lg [&>*]:transition-colors [&>*]:duration-300 hover:[&>*]:bg-gray-200">
+      <div className={`flex bg-primary shadow-md absolute w-[100%] h-[100vh] justify-center items-center z-50 top-0 md:hidden ease-in-out duration-500 ${showMenu ? 'left-[0%]' : 'left-[-110%]'}`}>
+        <IoMdClose className="absolute right-10 top-10 text-4xl cursor-pointer text-text" onClick={toggleMenu} /> {/* close btn */}
+        <ul className="text-2xl flex flex-col gap-5 text-center font-semibold [&>*]:rounded-lg [&>*]:transition-colors [&>*]:duration-300 hover:[&>*]:bg-background">
           <li className="h-fit"><a href="#" className="p-2 block">Home</a></li>
           <li className="h-fit"><a href="#" className="p-2 block">About Me</a></li>
           <li className="h-fit"><a href="#" className="p-2 block">Projects</a></li>

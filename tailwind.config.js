@@ -8,14 +8,20 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#252525',
+          DEFAULT: '#0D1117', // A deep, dark blue-black
         },
         accent: {
-          DEFAULT: '#228B22',
+          DEFAULT: '#00FFBF', // A bright neon cyan
         },
         background: {
-          DEFAULT: '#ffffff',
+          DEFAULT: '#1C2128', // A dark charcoal color
         },
+        secondary: {
+          DEFAULT: '#4CAF50', // A muted green for balance
+        },
+        text: {
+          DEFAULT: '#E6EDF3', // A light gray for text
+        }
       },
     },
   },

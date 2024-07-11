@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --color-primary: #0D1117;
+    --color-accent: #00FFBF;
+    --color-background: #1C2128;
+    --color-secondary: #4CAF50;
+    --color-text: #E6EDF3;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +21,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
+    color: var(--color-text);
+    background: var(--color-background);
 }
 
 /* Custom styles */
@@ -28,7 +38,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1rem;
-    color: #228B22;
+    color: var(--color-accent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
