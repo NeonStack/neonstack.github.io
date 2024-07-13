@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between bg-primary shadow-md p-5 px-10 fixed w-full z-50">
+    <header className="flex justify-between bg-primary shadow-md p-5 px-10 fixed w-full z-50 top-0">
       {/* desktop */}
       <a href='https://neonstack.github.io'><h1 className="text-text text-xl font-bold"> <span className='text-accent'>Neon</span>Stack</h1></a>
       <ul className="hidden gap-6 [&>*]:font-semibold md:flex">

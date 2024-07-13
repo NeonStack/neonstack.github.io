@@ -5,7 +5,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <div className='px-7'>
+        <Hero />
+      </div>
     </>
   );
 }
