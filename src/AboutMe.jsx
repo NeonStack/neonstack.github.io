@@ -1,9 +1,9 @@
 import MainTitle from "./components/MainTitle";
 
-export default function AboutMe() {
+export default function AboutMe({className}) {
     return (
         <>
-            <section className="h-fit text-center bg-background-alt">
+            <section className={`h-fit text-center bg-background-alt ${className}`}>
                 <div className="text-center">
                     <MainTitle title="About Me" />
                     <div className="py-7 text-center">

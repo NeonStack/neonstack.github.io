@@ -1,7 +1,7 @@
 import MainTitle from "./components/MainTitle";
 import SkillSvg from "./components/SkillSvg";
 
-export default function Skills() {
+export default function Skills({className}) {
     const mySkills = [
         { name: "HTML", icon: "html" },
         { name: "CSS", icon: "css" },
@@ -16,7 +16,7 @@ export default function Skills() {
 
     return (
         <>
-            <section className="h-fit text-center bg-background-alt">
+            <section className={`h-fit text-center bg-background-alt ${className}`}>
                 <div className="text-center">
                     <MainTitle title="Skills" />
                     <div className="py-7 grid grid-cols-3 gap-10">
