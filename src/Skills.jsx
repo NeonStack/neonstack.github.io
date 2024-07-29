@@ -23,7 +23,7 @@ export default function Skills({className}) {
                         {mySkills.map((mySkill, index) => (
                             <div key={index} className="flex flex-col items-center gap-2 w-20 justify-center mx-auto">
                                 <SkillSvg value={mySkill.icon} />
-                                <h2 className="w-full text-center" style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1.2rem)' }}>
+                                <h2 className="w-full text-center" style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' }}>
                                     {mySkill.name}
                                 </h2>
                             </div>

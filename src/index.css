@@ -82,3 +82,7 @@ section{
 .parent-triangle-container:hover::before {
   opacity: 1;
 }
+
+.cardSection{
+  @apply lg:bg-gradient-to-br from-background to-background-alt lg:rounded-2xl lg:h-full lg:shadow-lg lg:backdrop-blur-sm lg:border lg:border-black
+}
