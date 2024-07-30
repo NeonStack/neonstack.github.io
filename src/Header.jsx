@@ -7,14 +7,13 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(prevShowMenu => !prevShowMenu);
+    setShowMenu((prevShowMenu) => !prevShowMenu);
   };
 
   return (
     <header className="flex justify-between items-center bg-primary shadow-md p-5 px-10 fixed w-full z-50 top-0 max-h-20">
       {/* desktop */}
       <a href='https://neonstack.github.io'><h1 className="text-text text-xl font-bold flex justify-center items-center">
-        <img src="./src/assets/jl.webp" className='h-12 aspect-square mr-3 rounded-full border-[0.1rem] border-b-accent border-l-accent' alt="" />
         <span className='text-accent'>Neon</span>Stack</h1></a>
       <ul className="hidden gap-6 [&>*]:font-semibold lg:flex">
         <li><a href="#" className="px-2 py-1 parent-triangle-container">Home</a></li>

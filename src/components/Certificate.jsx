@@ -1,9 +1,12 @@
 import React from "react";
+import Img from "./Img";
 
 const Certificate = ({ title = "", provider = "", srcImg = "", verifyAt = "" }) => {
     return (
         <div className="bg-background flex flex-col gap-5 p-7 shadow-xl rounded-lg lg:w-[29%]" >
-            <img className="w-[30rem] aspect-video object-contain mx-auto rounded-lg" src={srcImg} alt=<img className="w-full rounded-lg shadow-md" src={srcImg} alt={`Picture of ${title}`} /> />
+
+            <Img src={srcImg} alt={title} className={"w-full aspect-video mx-auto rounded-lg shadow-md"}/>
+
             <div className="flex flex-col gap-1">
                 <h3 className="font-bold">{title}</h3>
                 <h5 className="text-text-subdued">{provider}</h5>

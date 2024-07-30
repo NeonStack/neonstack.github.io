@@ -5,7 +5,7 @@ export default function Hero({className}) {
         <>
             <section className={`h-fit text-center bg-background ${className}`}>
                 <div className="flex justify-center flex-col">
-                    <div className="flex justify-center items-center flex-col mt-7 gap-1">
+                    <div className="flex justify-center items-center flex-col gap-1">
                         <h3 className="text-[1.2rem] font-semibold">Hello World, I Am</h3>
                         <h1 className="text-[1.8rem] font-extrabold text-accent">JOHN LLOYD UMANI</h1>
                         <h3 className="text-[1.2rem] font-semibold">Aspiring Full Stack Developer</h3>
