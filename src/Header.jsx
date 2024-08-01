@@ -32,8 +32,8 @@ export default function Header() {
         <ul className="text-2xl flex flex-col gap-3 text-center font-semibold [&>*]:rounded-lg [&>*]:transition-colors [&>*]:duration-300 hover:[&>*]:bg-background">
           <li className="h-fit"><a href="#aboutme1" className="p-2 block" onClick={toggleMenu}>Home</a></li>
           <li className="h-fit"><a href="#aboutme2" className="p-2 block" onClick={toggleMenu}>About Me</a></li>
-          <li className="h-fit"><a href="#contact" className="p-2 block" onClick={toggleMenu}>Education</a></li>
-          <li className="h-fit"><a href="#contact" className="p-2 block" onClick={toggleMenu}>Skills</a></li>
+          <li className="h-fit"><a href="#education" className="p-2 block" onClick={toggleMenu}>Education</a></li>
+          <li className="h-fit"><a href="#skills" className="p-2 block" onClick={toggleMenu}>Skills</a></li>
           <li className="h-fit"><a href="#projects" className="p-2 block" onClick={toggleMenu}>Projects</a></li>
           <li className="h-fit"><a href="#certificates" className="p-2 block" onClick={toggleMenu}>Certificates</a></li>
           <li className="h-fit"><a href="#contact" className="p-2 block" onClick={toggleMenu}>Contact</a></li>

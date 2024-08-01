@@ -6,16 +6,23 @@ export default function Projects() {
 
     const ProjectCardValues = [
         {
+            title: "GO FOR IT - Internship Jobs",
+            imgLink: "/projectPictures/goforit.png",
+            shortDesc: "A research project website focusing on creating a seamless and empowering experience for both students and employers. Made user-friendly platform allowing them to discover internships that align with their specific skills and programs.",
+            skills: ["html", "css", "javascript", "php", "sqlite"],
+            webLink: "https://goforit.rf.gd/"
+        },
+        {
             title: "T1 Shop PH - Fan Concept",
-            imgLink: "/t1website.png",
+            imgLink: "/projectPictures/t1website.png",
             shortDesc: "School web development project showcasing an unofficial e-commerce platform. Demonstrates modern web design and functionality skills.",
-            skills: ["html", "css", "javascript", "sqlite"],
+            skills: ["html", "css", "javascript", "php", "sqlite"],
             srcLink: "https://github.com/NeonStack/t1-website-mockup-philippines.git",
             webLink: "https://t1-philippines-shop.rf.gd/"
         },
         {
             title: "OLFU Quiz Game",
-            imgLink: "/olfuQuizGame.png",
+            imgLink: "/projectPictures/olfuQuizGame.png",
             shortDesc: "Console-based quiz program in C++ covering multiple subjects with various difficulty levels. Features randomized questions, user accounts, and a top players list.",
             skills: ["c++"],
             srcLink: "https://github.com/NeonStack/OLFU-QUIZ-CONSOLE.git"

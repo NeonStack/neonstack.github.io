@@ -9,7 +9,7 @@ export default function Education({className}) {
                     <MainTitle title="Education" />
                     <div className="py-7 text-center">
                         <div className="rounded-lg flex justify-center items-center flex-col gap-6">
-                            <Img src={"/OLFULOGO.png"} alt={"OLFU LOGO"} className={"rounded-lg w-2/6 max-w-64 shadow-lg"}/>
+                            <Img src={"/logo/OLFULOGO.png"} alt={"OLFU LOGO"} className={"rounded-lg w-2/6 max-w-64 shadow-lg"}/>
                             <p className="font-medium">OUR LADY OF FATIMA UNIVERSITY <br /><span className="text-text-muted">- B.Sc. Information Technology -</span></p>
                         </div>
                     </div>

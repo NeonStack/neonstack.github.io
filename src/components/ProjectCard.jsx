@@ -6,9 +6,11 @@ const ProjectCard = ({ title = "", imgLink = "", shortDesc = "", webLink = "", s
 
     return (
         <div className="bg-background-alt flex flex-col gap-5 p-7 shadow-xl rounded-lg lg:w-[29%]" >
-            <Img src={imgLink} alt={title} className={"w-full aspect-video mx-auto rounded-lg shadow-md"}/>
+            <Img src={imgLink} alt={title} className={"w-full aspect-video mx-auto rounded-lg shadow-md"} />
             <h3 className="font-bold">{title}</h3>
-            <p className="text-[0.95rem] text-text-subdued">{shortDesc}</p>
+            <div className="min-h-28">
+                <p className="text-[0.95rem] text-text-subdued">{shortDesc}</p>
+            </div>
             <div className="flex flex-wrap items-center justify-evenly my-2">
                 {skills.map((skill) => (
                     skills.includes(skill) &&
@@ -18,10 +20,10 @@ const ProjectCard = ({ title = "", imgLink = "", shortDesc = "", webLink = "", s
                 ))}
             </div>
             <div className="flex flex-wrap gap-5 items-center justify-center">
-                {srcLink &&(
+                {srcLink && (
                     <a href={srcLink} target="_blank" className="text-text bg-background shadow-lg py-2 px-4 min-w-28 rounded-md">Source</a>
                 )}
-                {webLink &&(
+                {webLink && (
                     <a href={webLink} target="_blank" className="text-text bg-background shadow-lg py-2 px-4 min-w-28 rounded-md">Demo</a>
                 )}
             </div>
