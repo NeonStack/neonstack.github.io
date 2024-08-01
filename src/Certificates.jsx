@@ -6,13 +6,13 @@ export default function Certificates() {
         {
             title: "SQL & RDBMS 101", 
             provider: "Cognitive Class", 
-            srcImg: "./src/assets/ibmCertificate.png", 
+            srcImg: "/ibmCertificate.png", 
             verifyAt: "https://courses.cognitiveclass.ai/certificates/8e86f30dacc14204aeb71cd308ac0e58"
         },
         {
             title: "Responsive Web Design", 
             provider: "freeCodeCamp", 
-            srcImg: "./src/assets/fccWebDesign.png", 
+            srcImg: "/fccWebDesign.png", 
             verifyAt: "https://www.freecodecamp.org/certification/JL_GREEN/responsive-web-design"
         }
     ]
