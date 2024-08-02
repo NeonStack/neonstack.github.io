@@ -11,7 +11,7 @@ export default function Hero({className}) {
                         <h3 className="text-[1.2rem] font-semibold text-text-subdued">Aspiring Full Stack Developer</h3>
                     </div>
                     <div className="flex flex-row items-center justify-evenly mt-10 flex-wrap gap-4">
-                        <Button addClass={'bg-accent px-9'}>Contact Me</Button>
+                        <Button href={'#contact'} addClass={'bg-accent px-9'}>Contact Me</Button>
                         {/* <Button addClass={'bg-text'}>My Resume</Button> */}
                     </div>
                 </div>
