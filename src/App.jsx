@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Certificates from './Certificates';
 import Contact from './Contact';
+import Footer from './Footer';
 import './index.css';
 import { easeIn, motion } from "framer-motion";
 
@@ -59,6 +60,9 @@ export default function App() {
       </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </>
   );
