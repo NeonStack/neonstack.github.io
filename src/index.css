@@ -66,6 +66,7 @@ section{
 
 ::-webkit-scrollbar-thumb {
   background: var(--color-background);
+  border-left: solid rgb(18, 18, 18) 2px;
 }
 
 /* Custom styles */
@@ -91,5 +92,5 @@ section{
 }
 
 .cardSection{
-  @apply lg:bg-gradient-to-br from-background to-background-alt lg:rounded-2xl lg:h-full lg:shadow-lg lg:backdrop-blur-sm lg:border lg:border-black
+  @apply lg:bg-gradient-to-br to-background-alt lg:rounded-2xl lg:h-full lg:shadow-lg lg:backdrop-blur-sm lg:border lg:border-black
 }

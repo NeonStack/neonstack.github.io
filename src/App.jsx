@@ -47,19 +47,19 @@ export default function App() {
       >
         <div className='lg:flex lg:flex-col lg:gap-7 lg:w-[60%]'>
           <motion.div {...getAnimationProps(-20, 0, 0.1)}>
-            <Hero className={`lg:pt-10 cardSection`} />
+            <Hero className={`lg:pt-10 cardSection lg:from-background-component1`} />
           </motion.div>
           <div className='lg:flex lg:flex-row lg:gap-7'>
             <motion.div className='lg:w-1/2' {...getAnimationProps(0, 20, 0.2)}>
-              <AboutMe className={`cardSection`} />
+              <AboutMe className={`cardSection lg:from-background-component2`} />
             </motion.div>
             <motion.div className='lg:w-1/2' {...getAnimationProps(0, 20, 0.3)}>
-              <Education className={`cardSection`} />
+              <Education className={`cardSection lg:from-background-component3`} />
             </motion.div>
           </div>
         </div>
         <motion.div className='lg:w-[40%]' {...getAnimationProps(20, 0, 0.4)}>
-          <Skills className={`cardSection`} />
+          <Skills className={`cardSection lg:from-background-component4`} />
         </motion.div>
       </motion.div>
       <div id="projects">
