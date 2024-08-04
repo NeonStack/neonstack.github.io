@@ -12,7 +12,7 @@ export default {
           secondary: '#4CAF50', // A muted green for balance (moved from secondary)
         },
         accent: {
-          DEFAULT: '#31ED10', // A bright neon green
+          DEFAULT: '#39FF14', // neon green
         },
         background: {
           DEFAULT: '#1C2128', // A dark charcoal color
