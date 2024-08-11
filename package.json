@@ -2,7 +2,7 @@
   "homepage": "https://neonstack.github.io",
   "name": "firstreact",
   "private": true,
-  "version": "1.1.4",
+  "version": "1.1.5",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
