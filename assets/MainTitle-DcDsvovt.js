@@ -1,0 +1,1 @@
+import{j as e}from"./index-DcXMDF8s.js";const t=({title:s})=>e.jsxs("div",{className:"flex flex-row gap-5 items-center justify-center",children:[e.jsx("hr",{className:"w-full max-w-20 border"}),e.jsx("h1",{className:"text-3xl font-bold text-accent whitespace-nowrap",children:s}),e.jsx("hr",{className:"w-full max-w-20 border "})]}),r=t;export{r as M};
