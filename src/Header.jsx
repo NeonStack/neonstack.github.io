@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 
 
-export default function Header() {
+export default function Header({highlight}) {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu((prevShowMenu) => !prevShowMenu);
   };
+
+  useEffect(() => {
+    console.log('Header: ', highlight);
+  }, [highlight]);
 
   return (
     <header className="flex justify-between items-center bg-primary shadow-md p-5 px-10 fixed w-full z-50 top-0 max-h-20">
