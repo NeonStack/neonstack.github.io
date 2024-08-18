@@ -21,19 +21,19 @@ export default function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <div className='lg:flex lg:flex-col lg:gap-7 lg:w-[60%]'>
             <div id='aboutme1'>
-              <Hero className={`lg:pt-10 lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-black lg:bg-background`} />
+              <Hero className={`lg:pt-10 lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background`} />
             </div>
             <div className='lg:flex lg:flex-row lg:gap-7'>
               <div className='lg:w-1/2' id='aboutme2'>
-                <AboutMe className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-black lg:bg-background`} />
+                <AboutMe className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background`} />
               </div>
               <div className='lg:w-1/2' id='education'>
-                <Education className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-black lg:bg-background`} />
+                <Education className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background`} />
               </div>
             </div>
           </div>
           <div className='lg:w-[40%]' id='skills'>
-            <Skills className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-black lg:bg-background`} />
+            <Skills className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background`} />
           </div>
         </Suspense>
       </div>

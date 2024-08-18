@@ -8,24 +8,20 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0D1117', // A deep, dark blue-black
-          secondary: '#4CAF50', // A muted green for balance (moved from secondary)
+          DEFAULT: '#0A0F1C', // Deep dark blue for navbar and footer (matches your background)
+          secondary: '#1B263B', // Slate blue for secondary elements (slightly lighter but still dark)
         },
         accent: {
           DEFAULT: '#39FF14', // neon green
         },
         background: {
-          DEFAULT: '#1C2128', // A dark charcoal color
-          alt: '#16191F', // A slightly darker shade for alternating sections
-          component1: '#0A3D62', // Deep teal
-          component2: '#4B0082', // Vibrant indigo
-          component3: '#4A1A2C', // Dark burgundy
-          component4: '#013220', // Dark forest green
+          DEFAULT: '#111827', // Deep navy for the main background
+          alt: '#1E293B', // Slightly lighter navy for alternating sections
         },
         text: {
-          DEFAULT: '#E6EDF3', // A light gray for text
-          subdued: '#B1B7BE', // A darker gray for subtext
-          muted: '#8B949E', // An even more muted color for less important text
+          DEFAULT: '#F3F4F6', // Light gray for main text
+          subdued: '#9CA3AF', // Soft gray for subtext
+          muted: '#6B7280', // Medium gray for less important text
         }
       },
     },
