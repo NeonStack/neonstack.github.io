@@ -53,6 +53,26 @@ body {
 
 section{
   padding: 3rem 1.75rem;
+  width: 100%;
+}
+
+.hero-card{
+  padding: 3rem 1.75rem;
+}
+
+section > *, header > *, footer > *{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  section{
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-card{
+    width: 100%;
+  }
 }
 
 ::-webkit-scrollbar {

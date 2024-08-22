@@ -3,7 +3,7 @@ import Button from './components/Button.jsx';
 export default function Hero({className}) {
     return (
         <>
-            <section className={`h-fit text-center bg-background ${className}`}>
+            <div className={`hero-card h-fit text-center bg-background ${className}`}>
                 <div className="flex justify-center flex-col">
                     <div className="flex justify-center items-center flex-col gap-1">
                         <h4 className="text-[1.1rem] font-semibold text-text-subdued">Hello world! I am</h4>
@@ -15,7 +15,7 @@ export default function Hero({className}) {
                         {/* <Button addClass={'bg-text'}>My Resume</Button> */}
                     </div>
                 </div>
-            </section>
+            </div>
         </>
 
     );

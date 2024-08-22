@@ -16,7 +16,7 @@ export default function Skills({className}) {
 
     return (
         <>
-            <section className={`h-fit text-center bg-background-alt ${className}`}>
+            <div className={`hero-card h-fit text-center bg-background-alt ${className}`}>
                 <div className="text-center">
                     <MainTitle title="Skills" />
                     <div className="py-7 grid grid-cols-3 gap-10">
@@ -30,7 +30,7 @@ export default function Skills({className}) {
                         ))}
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }

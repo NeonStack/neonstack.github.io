@@ -4,7 +4,7 @@ import Img from "./components/Img";
 export default function Education({className}) {
     return (
         <>
-            <section className={`h-fit text-center bg-background ${className}`}>
+            <div className={`hero-card h-fit text-center bg-background ${className}`}>
                 <div className="text-center">
                     <MainTitle title="Education" />
                     <div className="py-7 text-center">
@@ -14,7 +14,7 @@ export default function Education({className}) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }
