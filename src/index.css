@@ -110,3 +110,19 @@ section > *, header > *, footer > *{
 .parent-triangle-container:hover::before {
   opacity: 1;
 }
+
+.contact-card {
+  border: none;
+  border-left: solid var(--color-accent) 4px;
+}
+
+.contact-card:hover ~ .contact-card, .contact-card:has(~ .contact-card:hover) {
+  border-left: solid var(--color-text) 4px;
+}
+
+.contact-card:hover {
+  border-left: solid var(--color-accent) 4px;
+}
+
+
+/* hover:shadow-sm hover:border-0 */

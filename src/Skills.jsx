@@ -11,7 +11,7 @@ export default function Skills({className}) {
         { name: "C++", icon: "c++" },
         { name: "PHP", icon: "php" },
         { name: "MySQL", icon: "mysql" },
-        { name: "SQLite", icon: "sqlite" }
+        { name: "MariaDB", icon: "mariadb" }
     ];
 
     return (

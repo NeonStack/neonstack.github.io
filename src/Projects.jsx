@@ -7,14 +7,14 @@ export default function Projects() {
             title: "GO FOR IT - Internship Jobs",
             imgLink: "/projectPictures/goforit.png",
             shortDesc: "A research project website focusing on creating a seamless and empowering experience for both students and employers. Made user-friendly platform allowing them to discover internships that align with their specific skills and programs.",
-            skills: ["html", "css", "javascript", "php", "sqlite"],
+            skills: ["html", "css", "javascript", "php", "mysql"],
             webLink: "https://goforit.rf.gd/"
         },
         {
             title: "T1 Shop PH - Fan Concept",
             imgLink: "/projectPictures/t1website.png",
             shortDesc: "School web development project showcasing an unofficial e-commerce platform. Demonstrates modern web design and functionality skills.",
-            skills: ["html", "css", "javascript", "php", "sqlite"],
+            skills: ["html", "css", "javascript", "php", "mysql"],
             srcLink: "https://github.com/NeonStack/t1-website-mockup-philippines.git",
             webLink: "https://t1-philippines-shop.rf.gd/"
         },
