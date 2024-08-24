@@ -2,16 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --color-primary: theme('colors.primary.DEFAULT');
-    --color-primary-secondary: theme('colors.primary.secondary');
-    --color-accent: theme('colors.accent.DEFAULT');
-    --color-background: theme('colors.background.DEFAULT');
-    --color-background-alt: theme('colors.background.alt');
-    --color-text: theme('colors.text.DEFAULT');
-    --color-text-subdued: theme('colors.text.subdued');
-    --color-text-muted: theme('colors.text.muted');
+@layer base {  
+  [data-theme="dark"] {
+    --color-primary: #0A0F1C; /* Dark theme values */
+    --color-primary-secondary: #1B263B;
+    --color-accent: #39FF14;
+    --color-background: #111827;
+    --color-background-alt: #1E293B;
+    --color-text: #F3F4F6;
+    --color-text-subdued: #9CA3AF;
+    --color-text-muted: #6B7280;
+  }
+  
+  [data-theme="light"] {
+    --color-primary: #E8F5E9;
+    --color-primary-secondary: #C8E6C9;
+    --color-accent: #00897B;
+    --color-background: #FFFFFF;
+    --color-background-alt: #F1F8E9;
+    --color-text: #1B5E20;
+    --color-text-subdued: #388E3C;
+    --color-text-muted: #66BB6A;
   }
 }
 
@@ -85,8 +96,8 @@ section > *, header > *, footer > *{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-background);
-  border-left: solid rgb(18, 18, 18) 2px;
+  background: var(--color-text-subdued);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Custom styles */

@@ -39,6 +39,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState('parentHero');
   const [heroLoaded, setHeroLoaded] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
+
   const [animationValues, setAnimationValues] = useState({
     viewport: {},
     initial: ''
