@@ -15,14 +15,14 @@
   }
   
   [data-theme="light"] {
-    --color-primary: #E8F5E9;
-    --color-primary-secondary: #C8E6C9;
-    --color-accent: #00897B;
-    --color-background: #FFFFFF;
-    --color-background-alt: #F1F8E9;
-    --color-text: #1B5E20;
-    --color-text-subdued: #388E3C;
-    --color-text-muted: #66BB6A;
+    --color-primary: #F0F4F1;  /* Main section background */
+    --color-primary-secondary: #E1E8E3;  /* Secondary background */
+    --color-accent: #2E7D32;  /* Accent color */
+    --color-background: #f6f7f7;  /* Overall page background */
+    --color-background-alt: #D8E2DC;  /* Component background */
+    --color-text: #1C2826;  /* Primary text */
+    --color-text-subdued: #495C54;  /* Secondary text */
+    --color-text-muted: #7A8D85;  /* Tertiary text */
   }
 }
 
