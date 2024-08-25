@@ -2,7 +2,7 @@ import React from 'react';
 import SkillSvg from './SkillSvg';
 
 const ContactCard = ({ icon = "", srcLink = "", srcTxt = "" }) => (
-    <a href={srcLink} target='_blank' className='flex flex-row w-full h-14 gap-2 p-4 rounded-md bg-background-alt max-w-96 contact-card shadow-sm hover:shadow-xl transition-all duration-200'>
+    <a href={srcLink} target='_blank' className='flex flex-row w-full h-14 gap-2 p-4 rounded-md lg:bg-background bg-background-alt max-w-96 contact-card shadow-sm hover:shadow-xl transition-all duration-200'>
         <div className='w-[11%] flex items-center justify-center'>
             <div className='h-full aspect-square'>
                 <SkillSvg value={icon} />

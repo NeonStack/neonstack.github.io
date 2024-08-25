@@ -58,7 +58,7 @@ export default function Header({ highlight }) {
         {/* mobile closed menu*/}
         <a href='https://neonstack.github.io'><h1 className="text-text text-xl font-bold justify-center items-center flex lg:hidden">
           <span className='text-accent'>Neon</span>Stack</h1></a>
-        <FaBars size={24} className='lg:hidden text-text' onClick={toggleMenu} />
+        <FaBars size={24} className='lg:hidden text-text cursor-pointer' onClick={toggleMenu} />
       </div>
       {/* mobile opened menu*/}
       <div className={`flex bg-primary shadow-md absolute w-[100%] h-[100vh] justify-center items-center z-50 top-0 lg:hidden ease-in-out duration-200 ${showMenu ? 'right-[0%]' : 'right-[-110%]'}`}>
