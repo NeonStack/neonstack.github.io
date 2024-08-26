@@ -20,7 +20,8 @@ export default function Header({ highlight }) {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     console.log(`changed the theme to ${theme}`);
-    localStorage.setItem('data-theme', theme)
+    localStorage.setItem('data-theme', theme);
+    window.dispatchEvent(new Event('themeChange'));
   }, [theme])
 
   function toggleTheme() {
@@ -39,8 +40,8 @@ export default function Header({ highlight }) {
           <li><a href="#certificates" className="px-2 py-1 parent-triangle-container">Certificates</a></li>
           <li><a href="#contact" className="px-2 py-1 parent-triangle-container">Contact</a></li>
           <li>
-            <input type="checkbox" id='themeButton' className='hidden' onChange={toggleTheme} />
-            <label htmlFor="themeButton" className='flex flex-row items-center justify-between relative bg-gray-400 w-12 px-1 py-1 rounded-lg cursor-pointer'>
+            <input type="checkbox" id='DesktopThemeButton' className='hidden' onChange={toggleTheme} />
+            <label htmlFor="DesktopThemeButton" className='flex flex-row items-center justify-between relative bg-gray-400 w-12 px-1 py-1 rounded-lg cursor-pointer'>
               <FaSun className='text-yellow-400' />
               <FaMoon />
               <FaCircle className={`absolute transition-all duration-500 scale-110 text-primary
@@ -64,8 +65,8 @@ export default function Header({ highlight }) {
       <div className={`flex bg-primary shadow-md absolute w-[100%] h-[100vh] justify-center items-center z-50 top-0 lg:hidden ease-in-out duration-200 ${showMenu ? 'right-[0%]' : 'right-[-110%]'}`}>
         {/* close btn */}
         <div className='absolute top-10 flex flex-row justify-between px-12 w-full'>
-          <input type="checkbox" id='themeButton' className='hidden' onChange={toggleTheme} />
-          <label htmlFor="themeButton" className='flex flex-row items-center justify-between relative bg-gray-400 w-20 px-3 rounded-lg cursor-pointer'>
+          <input type="checkbox" id='MobileThemeButton' className='hidden' onChange={toggleTheme} />
+          <label htmlFor="MobileThemeButton" className='flex flex-row items-center justify-between relative bg-gray-400 w-20 px-3 rounded-lg cursor-pointer'>
             <FaSun className='text-yellow-400' />
             <FaMoon />
             <FaCircle className={`absolute transition-all duration-500 scale-125 text-primary

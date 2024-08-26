@@ -15,14 +15,14 @@
   }
   
   [data-theme="light"] {
-    --color-primary: #F0F4F1;  /* Main section background */
-    --color-primary-secondary: #E1E8E3;  /* Secondary background */
-    --color-accent: #2E7D32;  /* Accent color */
-    --color-background: #f6f7f7;  /* Overall page background */
-    --color-background-alt: #D8E2DC;  /* Component background */
-    --color-text: #1C2826;  /* Primary text */
-    --color-text-subdued: #495C54;  /* Secondary text */
-    --color-text-muted: #7A8D85;  /* Tertiary text */
+    --color-primary: #E8ECE9;  /* Softer main section background */
+    --color-primary-secondary: #D9E0DB;  /* Softer secondary background */
+    --color-accent: #28992c;  /* Slightly less intense green accent */
+    --color-background: #F0F2F1;  /* Softer overall page background */
+    --color-background-alt: #CED6D1;  /* Softer component background */
+    --color-text: #2C3A36;  /* Darker primary text for better contrast */
+    --color-text-subdued: #5A6D64;  /* Darker secondary text */
+    --color-text-muted: #8A9C94;  /* Darker tertiary text */
   }
 }
 
