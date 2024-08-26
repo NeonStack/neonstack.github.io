@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {  
+@layer base {
   [data-theme="dark"] {
-    --color-primary: #0A0F1C; /* Dark theme values */
+    --color-primary: #0A0F1C;
+    /* Dark theme values */
     --color-primary-secondary: #1B263B;
     --color-accent: #39FF14;
     --color-background: #111827;
@@ -13,16 +14,24 @@
     --color-text-subdued: #9CA3AF;
     --color-text-muted: #6B7280;
   }
-  
+
   [data-theme="light"] {
-    --color-primary: #E8ECE9;  /* Softer main section background */
-    --color-primary-secondary: #D9E0DB;  /* Softer secondary background */
-    --color-accent: #28992c;  /* Slightly less intense green accent */
-    --color-background: #F0F2F1;  /* Softer overall page background */
-    --color-background-alt: #CED6D1;  /* Softer component background */
-    --color-text: #2C3A36;  /* Darker primary text for better contrast */
-    --color-text-subdued: #5A6D64;  /* Darker secondary text */
-    --color-text-muted: #8A9C94;  /* Darker tertiary text */
+    --color-primary: #E8ECE9;
+    /* Softer main section background */
+    --color-primary-secondary: #D9E0DB;
+    /* Softer secondary background */
+    --color-accent: #28992c;
+    /* Slightly less intense green accent */
+    --color-background: #F0F2F1;
+    /* Softer overall page background */
+    --color-background-alt: #CED6D1;
+    /* Softer component background */
+    --color-text: #2C3A36;
+    /* Darker primary text for better contrast */
+    --color-text-subdued: #5A6D64;
+    /* Darker secondary text */
+    --color-text-muted: #8A9C94;
+    /* Darker tertiary text */
   }
 }
 
@@ -33,19 +42,19 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-p{
+p {
   font-size: 1.1rem;
 }
 
-h1{
+h1 {
   font-size: 1.8rem;
 }
 
-h3{
+h3 {
   font-size: 1.2rem;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
   overflow-x: hidden;
@@ -62,26 +71,28 @@ body {
   overflow-x: hidden;
 }
 
-section{
+section {
   padding: 3rem 1.75rem;
   width: 100%;
 }
 
-.hero-card{
+.hero-card {
   padding: 3rem 1.75rem;
 }
 
-section > *, header > *, footer > *{
+section>*,
+header>*,
+footer>* {
   max-width: 1500px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
-  section{
+  section {
     padding: 3rem 1.5rem;
   }
 
-  .hero-card{
+  .hero-card {
     width: 100%;
   }
 }
@@ -127,7 +138,8 @@ section > *, header > *, footer > *{
   border-left: solid var(--color-accent) 4px;
 }
 
-.contact-card:hover ~ .contact-card, .contact-card:has(~ .contact-card:hover) {
+.contact-card:hover~.contact-card,
+.contact-card:has(~ .contact-card:hover) {
   border-left: solid var(--color-text) 4px;
 }
 
@@ -135,5 +147,37 @@ section > *, header > *, footer > *{
   border-left: solid var(--color-accent) 4px;
 }
 
+.component1,
+.component2,
+.component3,
+.component4 {
+  animation: compAnimation 1s ease-in-out forwards;
+  opacity: 0;
+}
 
-/* hover:shadow-sm hover:border-0 */
+.component1 {
+  transform: translateY(-30%);
+  animation-delay: 0.1s;
+}
+
+.component2,
+.component3 {
+  transform: translateY(30%);
+  animation-delay: 0.2s;
+}
+
+.component3 {
+  animation-delay: 0.3s;
+}
+
+.component4 {
+  transform: translateX(30%);
+  animation-delay: 0.4s;
+}
+
+@keyframes compAnimation {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
