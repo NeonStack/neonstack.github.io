@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "./Img";
 
-const Certificate = ({ title = "", provider = "", shortDesc = "", srcImg = "", verifyAt = "" }) => {
+const TrainingCard = ({ title = "", provider = "", shortDesc = "", srcImg = "", verifyAt = "" }) => {
     return (
         <div className="bg-background flex flex-col gap-5 p-7 shadow-xl rounded-lg lg:w-[29%]" >
 
@@ -23,4 +23,4 @@ const Certificate = ({ title = "", provider = "", shortDesc = "", srcImg = "", v
     );
 }
 
-export default Certificate;
+export default TrainingCard;

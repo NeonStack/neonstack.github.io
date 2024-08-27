@@ -91,7 +91,7 @@ export const ContactForm = () => {
 
     return (
         <>
-            <form ref={emailForm} onSubmit={sendEmail} className='flex flex-col flex-initial p-4 lg:p-7 bg-background-alt rounded-md w-full max-w-[30rem] lg:w-[30rem] transition-all duration-200'>
+            <form ref={emailForm} onSubmit={sendEmail} className='flex flex-col flex-initial p-4 lg:p-7 bg-background-alt rounded-md w-full max-w-[30rem] lg:w-[30rem]'>
                 <h1 className='font-bold'> Contact Form</h1>
                 <input type="hidden" name='my_name' value={"John"} />
                 <label htmlFor="sender_name" className='py-2 mt-3 w-full flex flex-start font-medium'><span className='text-red-500'>*</span>&nbsp;Name:</label>
@@ -99,7 +99,7 @@ export const ContactForm = () => {
                     type="text"
                     name="sender_name"
                     id='sender_name'
-                    className='rounded-sm text-text bg-background px-3 py-3 text-md'
+                    className='rounded-sm text-text bg-background px-3 py-3 text-md transition-all duration-200'
                     placeholder='Enter your name'
                     value={senderName}
                     onChange={(e) => setSenderName(e.target.value)}
@@ -110,7 +110,7 @@ export const ContactForm = () => {
                     type="email"
                     name="sender_email"
                     id='sender_email'
-                    className='rounded-sm text-text bg-background px-3 py-3 text-md'
+                    className='rounded-sm text-text bg-background px-3 py-3 text-md transition-all duration-200'
                     placeholder='Enter your email'
                     value={senderEmail}
                     onChange={(e) => setSenderEmail(e.target.value)}
@@ -120,7 +120,7 @@ export const ContactForm = () => {
                 <textarea
                     name="sender_message"
                     id='sender_message'
-                    className='rounded-sm text-text bg-background px-3 py-3 text-md resize-none h-48'
+                    className='rounded-sm text-text bg-background px-3 py-3 text-md resize-none h-48 transition-all duration-200'
                     placeholder='Enter your message'
                     value={senderMessage}
                     onChange={(e) => setSenderMessage(e.target.value)}
