@@ -37,7 +37,7 @@ export default function Header({ highlight }) {
         <ul className="hidden gap-6 [&>*]:font-semibold lg:flex">
           <li><a href="#aboutme1" className="px-2 py-1 parent-triangle-container">About Me</a></li>
           <li><a href="#projects" className="px-2 py-1 parent-triangle-container">Projects</a></li>
-          <li><a href="#certificates" className="px-2 py-1 parent-triangle-container">Certificates</a></li>
+          <li><a href="#trainings" className="px-2 py-1 parent-triangle-container">Trainings</a></li>
           <li><a href="#contact" className="px-2 py-1 parent-triangle-container">Contact</a></li>
           <li>
             <input type="checkbox" id='DesktopThemeButton' className='hidden' onChange={toggleTheme} />
@@ -85,7 +85,7 @@ export default function Header({ highlight }) {
           <li className="h-fit"><a href="#education" className="p-2 block" onClick={toggleMenu}>Education</a></li>
           <li className="h-fit"><a href="#skills" className="p-2 block" onClick={toggleMenu}>Skills</a></li>
           <li className="h-fit"><a href="#projects" className="p-2 block" onClick={toggleMenu}>Projects</a></li>
-          <li className="h-fit"><a href="#certificates" className="p-2 block" onClick={toggleMenu}>Certificates</a></li>
+          <li className="h-fit"><a href="#trainings" className="p-2 block" onClick={toggleMenu}>Trainings</a></li>
           <li className="h-fit"><a href="#contact" className="p-2 block" onClick={toggleMenu}>Contact</a></li>
         </ul>
 

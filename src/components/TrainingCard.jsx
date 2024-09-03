@@ -3,7 +3,7 @@ import Img from "./Img";
 
 const TrainingCard = ({ title = "", provider = "", shortDesc = "", srcImg = "", verifyAt = "" }) => {
     return (
-        <div className="bg-background flex flex-col gap-5 p-7 shadow-xl rounded-lg lg:w-[29%]" >
+        <div className="bg-background flex flex-col gap-5 p-7 shadow-xl rounded-lg max-w-96 lg:w-[29%]" >
 
             <Img src={srcImg} alt={title} className={"w-full aspect-video mx-auto rounded-lg shadow-md"} />
 

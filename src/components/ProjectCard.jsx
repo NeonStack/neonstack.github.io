@@ -5,7 +5,7 @@ import Img from "./Img";
 const ProjectCard = ({ title = "", imgLink = "", shortDesc = "", webLink = "", srcLink = "", skills = [] }) => {
 
     return (
-        <div className="bg-background-alt flex flex-col gap-5 p-7 rounded-lg lg:w-[29%] lg:justify-between" >
+        <div className="bg-background-alt flex flex-col gap-5 p-7 rounded-lg lg:w-[29%] lg:justify-between max-w-96" >
             <Img src={imgLink} alt={title} className={"w-full aspect-video mx-auto rounded-lg shadow-md"} />
             <h3 className="font-bold">{title}</h3>
             <div className="min-h-28">

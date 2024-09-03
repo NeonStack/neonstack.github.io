@@ -23,7 +23,7 @@ export default function Trainings() {
             <section className="h-fit text-center bg-background-alt">
                 <div className="text-center">
                     <MainTitle title="Trainings" />
-                    <div className="py-7 text-center flex flex-col gap-10 lg:flex-row lg:justify-evenly lg:items-stretch lg:flex-wrap">
+                    <div className="py-7 text-center flex flex-col gap-10 items-center lg:flex-row lg:justify-evenly lg:items-stretch lg:flex-wrap">
                         {/* test */}
                         {TrainingValues.map((TrainingValue, index) => (
                             <TrainingCard

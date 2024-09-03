@@ -31,7 +31,7 @@ export default function Projects() {
         <section className="h-fit text-center">
             <div className="text-center">
                 <MainTitle title="Projects" />
-                <div className="py-7 text-center flex flex-col gap-10 lg:flex-row lg:justify-evenly lg:items-stretch lg:flex-wrap">
+                <div className="py-7 text-center flex flex-col gap-10 items-center lg:flex-row lg:justify-evenly lg:items-stretch lg:flex-wrap">
                     {projectCardValues.map((project) => (
                         <ProjectCard
                             key={project.title}
