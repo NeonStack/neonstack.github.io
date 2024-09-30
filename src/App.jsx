@@ -30,7 +30,7 @@ export default function App() {
       <Header highlight={currentView} />
       <main>
         <section
-          className='lg:bg-background-alt p-0 lg:p-10 min-h-[100vh] overflow-hidden'
+          className='lg:bg-background-alt p-0 lg:p-10 overflow-hidden'
           id='parentHero'
           onViewportEnter={handleViewportUpdate}
         >
@@ -43,10 +43,10 @@ export default function App() {
           >
             <div className='flex flex-col mt-[4rem] lg:flex-row lg:gap-7'>
               <div className='lg:flex lg:flex-col lg:gap-7 lg:w-[60%]'>
-                <div id='aboutme1'>
+                <div id='aboutme1' className='lg:h-1/2'>
                   <Hero className={`lg:pt-10 lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background ${isLargeScreen ? "component1" : ""}`} />
                 </div>
-                <div className='lg:flex lg:flex-row lg:gap-7'>
+                <div className='lg:flex lg:flex-row lg:gap-7 lg:h-1/2'>
                   <div className='lg:w-1/2' id='aboutme2'>
                     <AboutMe className={`lg:rounded-2xl lg:h-full lg:shadow-lg lg:border lg:border-background-alt lg:bg-background ${isLargeScreen ? "component2" : ""}`} />
                   </div>
