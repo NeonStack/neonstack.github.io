@@ -20,7 +20,7 @@ I'm a third-year student with a strong interest in web development and a growing
 
 ## Education
 
-- Currently pursuing a degree in [Your Degree] at [Your University].
+- Currently pursuing a degree in BSIT at Our Lady of Fatima University.
 - Completed various online courses, including SQL & Relational Databases, Responsive Web Design, and more.
 
 ## Trainings
