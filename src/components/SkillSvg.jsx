@@ -230,7 +230,7 @@ const SkillSvg = React.memo(({ value = "" }) => {
           ></path>
         </svg>
       );
-    case "svelte":
+    case "sveltekit":
       return (
         <svg viewBox="0 0 128 128">
           <path

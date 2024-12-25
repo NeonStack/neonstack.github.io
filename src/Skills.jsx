@@ -12,7 +12,7 @@ export default function Skills({ className }) {
     { name: "PHP", icon: "php" },
     { name: "MySQL", icon: "mysql" },
     { name: "MariaDB", icon: "mariadb" },
-    { name: "Svelte Kit", icon: "svelte" },
+    { name: "Svelte Kit", icon: "sveltekit" },
     { name: "Supabase", icon: "supabase" },
     { name: "Python", icon: "python" },
   ];
