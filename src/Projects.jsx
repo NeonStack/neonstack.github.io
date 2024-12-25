@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MainTitle from "./components/MainTitle";
 import ProjectCard from "./components/ProjectCard";
 
 export default function Projects() {
     const [currentPage, setCurrentPage] = useState(0);
+    const [cardsPerPage, setCardsPerPage] = useState(getInitialCardsPerPage());
+
     const projectCardValues = [
         {
             title: "GO FOR IT - Internship Jobs",
@@ -37,7 +39,20 @@ export default function Projects() {
         }
     ];
 
-    const cardsPerPage = 3;
+    function getInitialCardsPerPage() {
+        return window.innerWidth < 768 ? 1 : 3;
+    }
+
+    useEffect(() => {
+        function handleResize() {
+            setCardsPerPage(getInitialCardsPerPage());
+            setCurrentPage(0); // Reset to first page when layout changes
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const totalPages = Math.ceil(projectCardValues.length / cardsPerPage);
 
     const handleNext = () => {

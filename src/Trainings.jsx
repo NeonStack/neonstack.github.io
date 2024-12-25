@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MainTitle from "./components/MainTitle";
 import TrainingCard from "./components/TrainingCard";
 
 export default function Trainings() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [cardsPerPage, setCardsPerPage] = useState(getInitialCardsPerPage());
+
   const TrainingValues = [
     {
       title: "SQL & RDBMS 101",
@@ -70,7 +72,20 @@ export default function Trainings() {
     },
   ];
 
-  const cardsPerPage = 3;
+  function getInitialCardsPerPage() {
+    return window.innerWidth < 768 ? 1 : 3;
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setCardsPerPage(getInitialCardsPerPage());
+      setCurrentPage(0); // Reset to first page when layout changes
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const totalPages = Math.ceil(TrainingValues.length / cardsPerPage);
 
   const handleNext = () => {
