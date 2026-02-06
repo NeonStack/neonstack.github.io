@@ -4,7 +4,7 @@ export const projectCardValues = [
     title: "APAW - Flood Prediction",
     imgLink: "/projectPictures/apaw.png",
     shortDesc:
-      "n innovative flood prediction platform developed using advanced machine learning techniques, APAW analyzes weather patterns, geographical features, and historical data to predict flood risks within Metro Manila.",
+      "An innovative flood prediction platform developed using advanced machine learning techniques, APAW analyzes weather patterns, geographical features, and historical data to predict flood risks within Metro Manila.",
     skills: ["html", "tailwind", "javascript", "sveltekit", "supabase"],
     webLink: "https://apawph.vercel.app/",
   },
