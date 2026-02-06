@@ -1,43 +1,11 @@
 import { useState, useEffect } from "react";
 import MainTitle from "./components/MainTitle";
 import ProjectCard from "./components/ProjectCard";
+import { projectCardValues } from "./data/portfolioData";
 
 export default function Projects() {
     const [currentPage, setCurrentPage] = useState(0);
     const [cardsPerPage, setCardsPerPage] = useState(getInitialCardsPerPage());
-
-    const projectCardValues = [
-        {
-            title: "GO FOR IT - Internship Jobs",
-            imgLink: "/projectPictures/goforit.png",
-            shortDesc: "A research project website focusing on creating a seamless and empowering experience for both students and employers. Made user-friendly platform allowing them to discover internships that align with their specific skills and programs.",
-            skills: ["html", "css", "javascript", "php", "mysql"],
-            webLink: "https://goforit.rf.gd/"
-        },
-        {
-            title: "SCG Dress Shoppe JOMS",
-            imgLink: "/projectPictures/scgjoms.png",
-            shortDesc: "The SCG Dress Shoppe Job Order Monitoring System (JOMS) is an internal platform designed exclusively for SCG Dress Shoppe employees to manage and monitor job orders efficiently.",
-            skills: ["html", "tailwind", "javascript", "sveltekit", "supabase"],
-            srcLink: "https://github.com/NeonStack/JOMS-SCG-Dress-Shoppe",
-            webLink: "https://scgjoms.vercel.app"
-        },
-        {
-            title: "RC Staycation",
-            imgLink: "/projectPictures/rcstaycation.png",
-            shortDesc: "RC Staycation is a luxury accommodation provider offering guests unparalleled privacy and comfort in well-appointed suites, featuring amenities such as 60-inch Smart TVs and fully equipped kitchen areas.",
-            skills: ["html", "tailwind", "javascript", "sveltekit", "supabase"],
-            srcLink: "https://github.com/NeonStack/rcstaycation",
-            webLink: "https://rcstaycation.vercel.app"
-        },
-        {
-            title: "OLFU Quiz Game",
-            imgLink: "/projectPictures/olfuQuizGame.png",
-            shortDesc: "Console-based quiz program in C++ covering multiple subjects with various difficulty levels. Features randomized questions, user accounts, and a top players list.",
-            skills: ["c++"],
-            srcLink: "https://github.com/NeonStack/OLFU-QUIZ-CONSOLE.git"
-        }
-    ];
 
     function getInitialCardsPerPage() {
         return window.innerWidth < 768 ? 1 : 3;
@@ -46,7 +14,7 @@ export default function Projects() {
     useEffect(() => {
         function handleResize() {
             setCardsPerPage(getInitialCardsPerPage());
-            setCurrentPage(0); // Reset to first page when layout changes
+            setCurrentPage(0);
         }
 
         window.addEventListener('resize', handleResize);
@@ -73,7 +41,7 @@ export default function Projects() {
             <div className="text-center">
                 <MainTitle title="Projects" />
                 <div className="relative max-w-7xl mx-auto px-4">
-                    <div className="absolute left-0 top-0 bottom-0 flex items-center">
+                    <div className="absolute left-0 top-1/2 -translate-y-1/2 z-20">
                         <button 
                             onClick={handlePrev}
                             className="w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 text-white rounded-full text-2xl transition-all"
@@ -85,16 +53,16 @@ export default function Projects() {
                         </button>
                     </div>
 
-                    <div className="py-7 text-center flex flex-col gap-10 items-center min-h-[600px] lg:flex-row lg:justify-evenly lg:items-stretch">
+                    <div className="py-7 text-center flex flex-col gap-10 items-center h-[680px] lg:flex-row lg:justify-evenly lg:items-stretch transition-all duration-500 ease-in-out">
                         {currentCards.map((project) => (
                             <ProjectCard
-                                key={project.title}
+                                key={`${currentPage}-${project.title}`}
                                 {...project}
                             />
                         ))}
                     </div>
 
-                    <div className="absolute right-0 top-0 bottom-0 flex items-center">
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20">
                         <button 
                             onClick={handleNext}
                             className="w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 text-white rounded-full text-2xl transition-all"
@@ -106,8 +74,7 @@ export default function Projects() {
                         </button>
                     </div>
 
-                    {/* Pagination dots */}
-                    <div className="flex justify-center gap-2 mt-4">
+                    <div className="flex justify-center gap-2 mt-4 pb-4">
                         {[...Array(totalPages)].map((_, index) => (
                             <button
                                 key={index}

@@ -8,7 +8,7 @@ export default function AboutMe({className}) {
                     <MainTitle title="About Me" />
                     <div className="py-7 text-center">
                         <p className="text-[1.1rem]">
-                            I am a 3rd year IT student passionate about full stack development. Experienced in web development and project management through academic project while currently exploring AI integration in web development.
+                            I am a 4th year IT student passionate about full stack development. Experienced in web development and project management through academic project while currently exploring AI integration in web development.
                         </p>
                     </div>
                 </div>
