@@ -1,0 +1,1 @@
+import{j as e}from"./index-CYyzeuZe.js";const a=({title:s,className:t})=>e.jsxs("div",{className:"flex flex-row gap-5 items-center justify-center ",children:[e.jsx("hr",{className:"w-full max-w-20 border"}),e.jsx("h1",{className:`${t} text-3xl font-bold text-accent whitespace-nowrap`,children:s}),e.jsx("hr",{className:"w-full max-w-20 border "})]}),l=a;export{l as M};

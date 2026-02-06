@@ -1,0 +1,1 @@
+import{r,j as e}from"./index-CYyzeuZe.js";function m({src:a,alt:o,className:d}){const[s,l]=r.useState(!1),t=()=>{l(!0)};return e.jsxs("div",{className:`${d} overflow-hidden`,children:[!s&&e.jsx("div",{className:"animate-pulse bg-gray-300 rounded p-[50%] w-full"}),e.jsx("img",{src:a,alt:o,className:`w-full h-full ${s?"block":"hidden"}`,onLoad:t})]})}export{m as I};
